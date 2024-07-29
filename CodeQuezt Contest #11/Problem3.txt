@@ -1,0 +1,36 @@
+Description
+Problem Statement
+
+You need to implement a function safe_floor that finds the highest floor from which a vault can be dropped without it breaking, based on a sorted 2D array of test results. Each row in the array represents a floor number and a 0 or 1 indicating whether a vault dropped from that floor would break or not.
+
+Note: 1 denotes that it breaks.
+
+0 denotes that it does not break.
+
+Input Format
+
+The first line contains N, an integer representing the number of floors.
+The second line contains tests_rows, which is the number of rows in the tests array.
+The third line contains tests_columns, which is the number of columns in the tests array. This will always be 2
+The next test_rows rows contain the floor number followed by 0 or 1 which denotes whether it breaks or not.
+Constraints
+
+1<=N<107
+1<=test_rows<=N
+The input array tests is sorted by the floor number.
+Each floor number is unique within the array.
+Output Format
+
+The function safe_floor Should return an integer representing the highest floor number from which a vault can be dropped without it breaking.
+Evaluation Parameters
+
+Sample Input
+6
+2
+2
+3 0
+6 1
+Sample Output
+3
+Explanation
+Vaults do not break on floor 3 but break on floor 6. Therefore, floor 3 is the highest safe floor.

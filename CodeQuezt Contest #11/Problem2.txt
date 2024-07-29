@@ -1,0 +1,30 @@
+Description
+Problem Statement
+
+You are given an expression as a string that may include function calls. Each function call is in the form funcName(arg1, arg2, ...). The arguments can be literals (numbers) or nested function calls. Your task is to evaluate the expression and return the result.
+
+funcName is of 4 types:
+
+add(arg1, arg2): Adds arg1 and arg2 together. For example, add(2, 3) evaluates to 5.
+sub(arg1, arg2): Subtracts arg2 from arg1. For example, sub(5, 2) evaluates to 3.
+mul(arg1, arg2): Multiplies arg1 by arg2. For example, mul(3, 4) evaluates to 12.
+div(arg1, arg2): Performs integer division of arg1 by arg2. For example, div(20, 4) evaluates to 5
+Input Format
+
+A single line containing the string expr.
+Constraints
+
+1<=expr.Length<1000
+1<=arg1,arg2<=1000
+Output Format
+
+Return the integer containing the value after the expression is evaluated.
+Evaluation Parameters
+
+Sample Input
+add(2, mul(3, 4))
+Sample Output
+14
+Explanation
+﻿mul(3, 4) evaluates to 12.
+add(2, 12) evaluates to 14.
